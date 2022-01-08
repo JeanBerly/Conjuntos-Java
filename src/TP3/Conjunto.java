@@ -3,6 +3,10 @@ package TP3;
 public abstract class Conjunto<T>{
     public abstract Boolean contemElemento(T elemento);
     Conjunto<T> adicionarElemento(T elemento){
+        if (contemElemento(elemento)){
+            System.out.println("Elemento já existe.");
+            return this;
+        }
         return new ConjuntoElemento<T>(elemento, this);
     }
     Conjunto<T> uniao(Conjunto<T> conjunto){

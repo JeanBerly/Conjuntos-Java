@@ -1,8 +1,7 @@
 package TP3;
 
 public class main {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Conjunto<Integer> c1 = new ConjuntoVazio<>();
         c1 = c1.adicionarElemento(1);
         c1 = c1.adicionarElemento(2);
